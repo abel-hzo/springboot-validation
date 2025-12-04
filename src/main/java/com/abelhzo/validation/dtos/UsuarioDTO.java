@@ -33,7 +33,7 @@ public class UsuarioDTO {
 	@Pattern(regexp = "^[A-Za-z]*$", message = "Usuario solo agregue texto sin espacios.")
 	@Size(min = 4, max = 15, message = "Usuario mas de 4 caracteres y menos de 15.")
 	private String username;
-	@NotBlank(message = "Llene campo comtraseña.")
+	@NotBlank(message = "Llene campo contraseña.")
 	@Size(min = 6, max = 20, message = "Password mas de 6 caracteres y menos de 20")
 	private String contrase;
 	@Email(message = "Formato de Email invalido.")
